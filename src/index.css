@@ -16,7 +16,8 @@
 
   scroll-behavior: smooth;
   /* background: radial-gradient(circle, rgba(51, 51, 51, 1) 0%, rgba(38, 38, 38, 1) 50%, rgba(10, 10, 10, 1) 100%); */
-  background: radial-gradient(circle,rgba(187, 134, 255, 1) 0%, rgba(133, 75, 209, 1) 13%, rgba(28, 12, 48, 1) 57%, rgba(10, 10, 10, 1) 100%);
+  /* background: radial-gradient(circle,rgba(187, 134, 255, 1) 0%, rgba(133, 75, 209, 1) 13%, rgba(28, 12, 48, 1) 57%, rgba(10, 10, 10, 1) 100%); */
+  background: radial-gradient(circle,rgba(139, 51, 255, 1) 0%, rgba(108, 33, 207, 1) 13%, rgba(22, 4, 54, 1) 57%, rgba(11, 4, 18, 1) 75%, rgba(10, 10, 10, 1) 100%);
 
   /* Ensure it covers entire viewport */
   background-size: cover;

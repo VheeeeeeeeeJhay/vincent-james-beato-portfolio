@@ -1,7 +1,10 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import BG from "./assets/bg.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function App() {
 

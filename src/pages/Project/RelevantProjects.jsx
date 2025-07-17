@@ -9,11 +9,17 @@ function RelevantProjects() {
     return (
         <>
             <div className={RelevantProjectsStyles.section}>
-                <h1 className={RelevantProjectsStyles.section_header}>Relevant&nbsp;<span>Projects</span></h1>
-                
+                <h1 className={RelevantProjectsStyles.section_header}
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-center"
+                data-aos-duration="1000">Relevant&nbsp;<span>Projects</span></h1>
                 
                 <div className={RelevantProjectsStyles.cards_container}>
-                    <div className={RelevantProjectsStyles.card}>
+                    <div className={RelevantProjectsStyles.card}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="2500"
+                    data-aos-delay="100">
                         <img className={RelevantProjectsStyles.card_img} src={Barter} alt="Raiden" />
                         <div className={RelevantProjectsStyles.card_info}>
                             <h3>Swapii: Barter Web System</h3>
@@ -30,7 +36,11 @@ function RelevantProjects() {
                             {/* <a className={RelevantProjectsStyles.card_button} href="https://github.com/VheeeeeeeeeJhay" target="_blank" rel="noopener noreferrer">View Project</a> */}
                         </div>
                     </div>
-                    <div className={RelevantProjectsStyles.card}>
+                    <div className={RelevantProjectsStyles.card}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="2500"
+                    data-aos-delay="200">
                         <img className={RelevantProjectsStyles.card_img} src={Inventory} alt="Inventory"/>
                         <div className={RelevantProjectsStyles.card_info}>
                             <h3>Inventory System for Poultry Business</h3>
@@ -46,7 +56,11 @@ function RelevantProjects() {
                             {/* <a className={RelevantProjectsStyles.card_button} href="https://github.com/VheeeeeeeeeJhay" target="_blank" rel="noopener noreferrer">View Project</a> */}
                         </div>
                     </div>
-                    <div className={RelevantProjectsStyles.card}>
+                    <div className={RelevantProjectsStyles.card}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="2500"
+                    data-aos-delay="300">
                         <img className={RelevantProjectsStyles.card_img} src={TodoList} alt="TodoList"/>
                         <div className={RelevantProjectsStyles.card_info}>
                             <h3>Todo List Application</h3>
@@ -62,7 +76,11 @@ function RelevantProjects() {
                             {/* <a className={RelevantProjectsStyles.card_button} href="https://github.com/VheeeeeeeeeJhay" target="_blank" rel="noopener noreferrer">View Project</a> */}
                         </div>
                     </div>
-                    <div className={RelevantProjectsStyles.card}>
+                    <div className={RelevantProjectsStyles.card}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="2500"
+                    data-aos-delay="400">
                         <img className={RelevantProjectsStyles.card_img} src={FoodOrdering} alt="FoodOrdering"/>
                         <div className={RelevantProjectsStyles.card_info}>
                             <h3>Food Ordering System</h3>

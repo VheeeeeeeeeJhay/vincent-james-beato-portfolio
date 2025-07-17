@@ -12,7 +12,10 @@ function AboutMe() {
     return (
         <>
             <div className={AboutMeStyles.section}>
-                <div className={AboutMeStyles.section_context}>
+                <div className={AboutMeStyles.section_context}
+                data-aos="fade-down-right"
+                data-aos-anchor-placement="top-center"
+                data-aos-duration="1000">
                     <h1 className={AboutMeStyles.section_header}>ABOUT&nbsp;<span>ME</span></h1>
                     <div style={{ margin: "0 .25rem"}}>
                         <p>Hello, I'm Vincent James Beato. A fresh graduate in Computer Science. An Aspiring Full Stack Developer with a passion for creating innovative and user-friendly web applications. Eager to learn, enhance, and adapt to new technologies, and contribute to the success of
@@ -35,83 +38,129 @@ function AboutMe() {
                     </div>
 
                 </div>
-                <div className={AboutMeStyles.img_container}>
+                <div className={AboutMeStyles.img_container}
+                data-aos="fade-down-left"
+                data-aos-anchor-placement="top-center"
+                data-aos-duration="2500">
                     <img src={VheeJhay} alt="VheeJhay" className={AboutMeStyles.about_img}/>
                 </div>
             </div>
 
-            <div className={AboutMeStyles.sub_section_container}>
-                <h4 className={AboutMeStyles.sub_section_header}>WORK&nbsp;<span>EXPERIENCE</span></h4>
-                <div className={AboutMeStyles.timeline}>
-                    <div className={AboutMeStyles.timeline_item}>
-                        <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
+            <div>
+                <div className={AboutMeStyles.sub_section_container}>
+                    <h4 className={AboutMeStyles.sub_section_header}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="1500"
+                    >WORK&nbsp;<span>EXPERIENCE</span></h4>
+                    <div className={AboutMeStyles.timeline}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="1500"
+                    data-aos-delay="100">
+                        <div className={AboutMeStyles.timeline_item}>
+                            <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
+                                <div className={AboutMeStyles.timeline_info}>
+                                <h3>BAGUIO CITY'S SMART CITY COMMAND AND CONTROL CENTER</h3>
+                                <div className={AboutMeStyles.timeline_sub_info}>
+                                    <h4>Baguio City</h4>
+                                    <h4>FEBRUARY 2025 - MAY 2025</h4>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div className={AboutMeStyles.sub_section_container}>
+                    <h4 className={AboutMeStyles.sub_section_header}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="1500">EDUCATIONAL&nbsp;<span>BACKGROUND</span></h4>
+                    <div className={AboutMeStyles.timeline}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="1500"
+                    data-aos-delay="100">
+                        <div className={AboutMeStyles.timeline_item}>
+                            <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
                             <div className={AboutMeStyles.timeline_info}>
-                            <h3>BAGUIO CITY'S SMART CITY COMMAND AND CONTROL CENTER</h3>
-                            <div className={AboutMeStyles.timeline_sub_info}>
-                                <h4>Baguio City</h4>
-                                <h4>FEBRUARY 2025 - MAY 2025</h4>
+                                <h3>Bachelor of Science in Computer Science</h3>
+                                <div className={AboutMeStyles.timeline_sub_info}>
+                                    <h4>University of Baguio</h4>
+                                    <h4>2021 - 2025</h4>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                        </div>
+                    </div>
+                    <div className={AboutMeStyles.timeline}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="1500"
+                    data-aos-delay="100">
+                        <div className={AboutMeStyles.timeline_item}>
+                            <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
+                            <div className={AboutMeStyles.timeline_info}>
+                                <h3>Senior High School</h3>
+                                <div className={AboutMeStyles.timeline_sub_info}>
+                                    <h4>University of Baguio</h4>
+                                    <h4>2021 - 2025</h4>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={AboutMeStyles.timeline}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="1500"
+                    data-aos-delay="100">
+                        <div className={AboutMeStyles.timeline_item}>
+                            <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
+                            <div className={AboutMeStyles.timeline_info}>
+                                <h3>Junior High School</h3>
+                                <div className={AboutMeStyles.timeline_sub_info}>
+                                    <h4>University of Baguio</h4>
+                                    <h4>2021 - 2025</h4>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-
-                <h4 className={AboutMeStyles.sub_section_header}>EDUCATIONAL&nbsp;<span>BACKGROUND</span></h4>
-                <div className={AboutMeStyles.timeline}>
-                    <div className={AboutMeStyles.timeline_item}>
-                        <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
-                        <div className={AboutMeStyles.timeline_info}>
-                            <h3>Bachelor of Science in Computer Science</h3>
-                            <div className={AboutMeStyles.timeline_sub_info}>
-                                <h4>University of Baguio</h4>
-                                <h4>2021 - 2025</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                <div className={AboutMeStyles.sub_section_container}>
+                    <h4 className={AboutMeStyles.sub_section_header}
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="1500">WHAT I&nbsp;<span>OFFER</span></h4>
+                    <div className={AboutMeStyles.offer_container}>
+                        <div className={AboutMeStyles.offer_item}
+                        data-aos="fade-up-right"
+                        data-aos-anchor-placement="top-center"
+                        data-aos-duration="1500"
+                        data-aos-delay="100">
+                            <h3>Full Stack Development</h3>
+                            <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
                         </div>
-                    </div>
-                </div>
-                <div className={AboutMeStyles.timeline}>
-                    <div className={AboutMeStyles.timeline_item}>
-                        <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
-                        <div className={AboutMeStyles.timeline_info}>
-                            <h3>Senior High School</h3>
-                            <div className={AboutMeStyles.timeline_sub_info}>
-                                <h4>University of Baguio</h4>
-                                <h4>2021 - 2025</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                        <div className={AboutMeStyles.offer_item}
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-center"
+                        data-aos-duration="1500"
+                        data-aos-delay="100">
+                            <h3>Backend Development</h3>
+                            <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
                         </div>
-                    </div>
-                </div>
-                <div className={AboutMeStyles.timeline}>
-                    <div className={AboutMeStyles.timeline_item}>
-                        <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
-                        <div className={AboutMeStyles.timeline_info}>
-                            <h3>Junior High School</h3>
-                            <div className={AboutMeStyles.timeline_sub_info}>
-                                <h4>University of Baguio</h4>
-                                <h4>2021 - 2025</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                        <div className={AboutMeStyles.offer_item}
+                        data-aos="fade-up-left"
+                        data-aos-anchor-placement="top-center"
+                        data-aos-duration="1500"
+                        data-aos-delay="100">
+                            <h3>Responsive Design</h3>
+                            <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
                         </div>
-                    </div>
-                </div>
-
-
-                <h4 className={AboutMeStyles.sub_section_header}>WHAT I&nbsp;<span>OFFER</span></h4>
-                <div className={AboutMeStyles.offer_container}>
-                    <div className={AboutMeStyles.offer_item}>
-                        <h3>Full Stack Development</h3>
-                        <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
-                    </div>
-                    <div className={AboutMeStyles.offer_item}>
-                        <h3>Backend Development</h3>
-                        <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
-                    </div>
-                    <div className={AboutMeStyles.offer_item}>
-                        <h3>Responsive Design</h3>
-                        <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
                     </div>
                 </div>
             </div>

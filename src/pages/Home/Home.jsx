@@ -17,7 +17,11 @@ function Home({ id }) {
     return (
         <section id={id} className={HomeStyles.home}>
             <div className={HomeStyles.home_container}>
-                <div className={HomeStyles.hero_container}>
+                <div className={HomeStyles.hero_container}
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-center"
+                data-aos-duration="1000"
+                data-aos-delay="100">
 
                     <img
                         src={VheeJhay}
