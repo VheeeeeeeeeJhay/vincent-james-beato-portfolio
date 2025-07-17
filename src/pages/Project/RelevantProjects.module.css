@@ -1,0 +1,114 @@
+.section {
+    padding-top: 10%;
+}
+
+.section_header {
+    position: relative;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin: 0;
+}
+
+.section_header span {
+    color: #bb86fc;
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-top: 2.5rem;
+}
+
+.card_info h3,
+.card_info p {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.card_info h3 {
+    font-size: 15px;
+}
+
+.card_info p {
+    font-size: 13px;
+}
+
+.card_img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px #bb86fc;
+    border: 1px solid #bb86fc;
+    filter: drop-shadow(0px 0px 10px rgba(68, 28, 68, 0.5));
+}
+
+.card {
+    border: 1px solid #333;
+    background-color: rgba(43, 42, 42, 0.5);
+    border-radius: 8px;
+}
+
+.card_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 6px 1rem;
+}
+
+.card_button {
+    color: #fff;
+    background-color: #311432;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    width: 100%;
+    text-align: center;
+}
+
+.card_button:hover {
+    cursor: pointer;
+    background-color: #4d0f28;
+    color: #fff;
+}
+
+.tags_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.tags_container p {
+    color: #fff;
+    margin: 0.2rem 0;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #bb86fc;
+    font-size: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tags_container p:hover {
+    cursor: pointer;
+    background-color: #bb86fc;
+    color: #fff;
+}
+    

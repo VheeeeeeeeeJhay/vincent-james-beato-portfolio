@@ -1,0 +1,132 @@
+.nav {
+    border-radius: 10px;
+    margin: 1rem 2rem 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    width: calc(100vw - 4rem);
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 100;
+    background: rgba(255,255,255,0.15);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+    /* transition: width 4s ease-in-out; */
+}
+
+.nav_home {
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1rem;
+    box-sizing: border-box;
+    z-index: 100;
+    background: rgba(255,255,255,0.15);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+    /* transition: width 4s ease-in-out; */
+    width: auto;
+    min-width: 30%;
+    padding: 5px 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav_home .nav_img_container {
+    margin: 0;
+    padding: 0;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.nav_links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #BB86FC;
+    transition: width 0.3s ease;
+}
+
+.nav_links a:hover,
+.nav_links a.active {
+    color: #BB86FC;
+    font-weight: bold;
+}
+
+.nav_links a.active::after,
+.nav_links a:hover::after {
+    width: 100%;
+}
+
+.nav_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav_img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 50%;
+    /* border: 1px solid #311432; */
+}
+
+.nav_h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+    /* background: #121FCF; */
+    background: linear-gradient(to right, #BB86FC 0%, #8b33f8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.status {
+    margin: 0;
+    font-size: .75rem;
+    font-style: italic;
+    position: relative;
+    margin-left: 0.75rem;
+}
+
+.status:before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #00b400;
+    border: 1px solid #333;
+    margin-right: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -0.75rem;
+}
+
+
