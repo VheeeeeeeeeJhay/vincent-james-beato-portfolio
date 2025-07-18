@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   font-family: "Source Sans 3", "Arial", sans-serif;
   line-height: 1.5;
@@ -7,7 +19,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,6 +26,45 @@
   -moz-osx-font-smoothing: grayscale;
 
   scroll-behavior: smooth;
+
+  overflow-x: hidden;
+  
+  /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+  /** {
+    scrollbar-width: thin;
+    scrollbar-color: #BB86FC #000000;
+  }*/
+
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: #000000;
+  }
+
+  *::-webkit-scrollbar-track:hover {
+    background-color: #000000;
+  }
+
+  *::-webkit-scrollbar-track:active {
+    background-color: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #BB86FC;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #8660B5;
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #513A6D;
+  }
   /* background: radial-gradient(circle, rgba(51, 51, 51, 1) 0%, rgba(38, 38, 38, 1) 50%, rgba(10, 10, 10, 1) 100%); */
   /* background: radial-gradient(circle,rgba(187, 134, 255, 1) 0%, rgba(133, 75, 209, 1) 13%, rgba(28, 12, 48, 1) 57%, rgba(10, 10, 10, 1) 100%); */
   background: radial-gradient(circle,rgba(139, 51, 255, 1) 0%, rgba(108, 33, 207, 1) 13%, rgba(22, 4, 54, 1) 57%, rgba(11, 4, 18, 1) 75%, rgba(10, 10, 10, 1) 100%);
@@ -38,29 +88,15 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
-  /* overflow-x: hidden; */
+  overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
 }
 
 @media (prefers-color-scheme: light) {

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 5px 2rem;
     width: calc(100vw - 4rem);
     position: fixed;
     box-sizing: border-box;
@@ -13,29 +13,29 @@
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.175);
-    /* transition: width 4s ease-in-out; */
 }
 
 .nav_home {
-    border-radius: 10px;
+    border-radius: 30px;
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
     top: 1rem;
+    margin: 0 auto;
     box-sizing: border-box;
     z-index: 100;
     background: rgba(255,255,255,0.15);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.175);
-    /* transition: width 4s ease-in-out; */
-    width: auto;
-    min-width: 30%;
+    width: fit-content;
+    min-width: 20%;
     padding: 5px 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    box-shadow: 0 0 10px #0003;
 }
 
 .nav_home .nav_img_container {
@@ -80,6 +80,135 @@
 .nav_links a.active::after,
 .nav_links a:hover::after {
     width: 100%;
+}
+
+/* Mobile Menu Button */
+.menu_button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu_button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Menu */
+.mobile_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 65%;
+    /* max-width: 300px; */
+    height: 90vh;
+    background: rgba(54, 15, 111, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 999;
+    transition: right 0.3s ease-in-out;
+    padding: 5rem 2rem 2rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile_menu_open {
+    right: 0;
+}
+
+.mobile_nav_links {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+.mobile_nav_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    display: block;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+}
+
+.mobile_menu_contacts {
+    margin-top: 25%;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile_menu_contacts h5 {
+    color: #BB86FC;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.mobile_menu_contacts p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.mobile_nav_links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #BB86FC;
+    transition: width 0.3s ease;
+}
+
+.mobile_nav_links a:hover,
+.mobile_nav_links a.active {
+    color: #BB86FC;
+}
+
+.mobile_nav_links a.active::after,
+.mobile_nav_links a:hover::after {
+    width: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .nav_links {
+        display: none;
+    }
+    
+    .menu_button {
+        display: block;
+    }
+    
+    .mobile_menu {
+        display: block;
+    }
+    
+    .nav_home .nav_img_container {
+        margin: 0 auto;
+    }
+    
+    .nav_home {
+        width: 90%;
+        justify-content: space-between;
+        padding: 5px 1.5rem;
+    }
 }
 
 .nav_img_container {
@@ -128,5 +257,30 @@
     transform: translateY(-50%);
     left: -0.75rem;
 }
+
+.main {
+    margin: 0 10%;
+}
+
+@media (max-width: 600px) {
+    .nav_home {
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: calc(100vw - 20%);
+        margin-top: 2rem;
+    }
+
+    .nav {
+        min-width: calc(100vw - 20%);
+        margin-top: 2rem;
+        padding: 5px 1rem;
+    }
+
+    .nav_links {
+        display: none;
+    }
+}
+
+
 
 

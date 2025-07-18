@@ -20,7 +20,7 @@
 .container_1,
 .container_2 {
     padding: 0 8%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: auto;
 }
 
@@ -218,4 +218,37 @@
 
 .contact_form button:hover {
     background: #4d0f28;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+    section {
+        padding-top: 25%;
+    }
+
+    .container_1 ,
+    .container_2 {
+        padding: 0;
+    }
+
+    .section_header {
+        font-size: 2rem;
+    }
+
+    .contact_form {
+        padding: 1rem;
+    }
+
+    .divider_2>h3 {
+        font-size: .75rem;
+    }
+
+    .img_container {
+        width: 50vw;
+        height: 35vh;
+    }
+
+    .container_2 {
+        gap: 0;
+    }
 }

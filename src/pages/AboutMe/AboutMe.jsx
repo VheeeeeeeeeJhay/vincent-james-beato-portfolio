@@ -5,9 +5,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaChessRook } from "react-icons/fa";
 import { SiCircleci } from "react-icons/si";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 function AboutMe() {
-    const techStack = ["HTML", "CSS", "JavaScript", "React", "Node.js"];
+    const isMobile = useMediaQuery(600);
 
     return (
         <>
@@ -60,7 +61,7 @@ function AboutMe() {
                     data-aos-delay="100">
                         <div className={AboutMeStyles.timeline_item}>
                             <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
-                                <div className={AboutMeStyles.timeline_info}>
+                            <div className={AboutMeStyles.timeline_info}>
                                 <h3>BAGUIO CITY'S SMART CITY COMMAND AND CONTROL CENTER</h3>
                                 <div className={AboutMeStyles.timeline_sub_info}>
                                     <h4>Baguio City</h4>
@@ -103,10 +104,10 @@ function AboutMe() {
                         <div className={AboutMeStyles.timeline_item}>
                             <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
                             <div className={AboutMeStyles.timeline_info}>
-                                <h3>Senior High School</h3>
+                                <h3>SHS | Information and Communication Technology (ICT)                                </h3>
                                 <div className={AboutMeStyles.timeline_sub_info}>
                                     <h4>University of Baguio</h4>
-                                    <h4>2021 - 2025</h4>
+                                    <h4>2019 – 2021</h4>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
                             </div>
@@ -122,8 +123,8 @@ function AboutMe() {
                             <div className={AboutMeStyles.timeline_info}>
                                 <h3>Junior High School</h3>
                                 <div className={AboutMeStyles.timeline_sub_info}>
-                                    <h4>University of Baguio</h4>
-                                    <h4>2021 - 2025</h4>
+                                    <h4>Computer Arts Technological College</h4>
+                                    <h4>2016 – 2019</h4>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
                             </div>
@@ -136,32 +137,61 @@ function AboutMe() {
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-center"
                     data-aos-duration="1500">WHAT I&nbsp;<span>OFFER</span></h4>
-                    <div className={AboutMeStyles.offer_container}>
-                        <div className={AboutMeStyles.offer_item}
-                        data-aos="fade-up-right"
-                        data-aos-anchor-placement="top-center"
-                        data-aos-duration="1500"
-                        data-aos-delay="100">
-                            <h3>Full Stack Development</h3>
-                            <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                    {isMobile ? (
+                        <div className={AboutMeStyles.offer_container}>
+                            <div className={AboutMeStyles.offer_item}
+                            data-aos="fade-up-right"
+                            data-aos-anchor-placement="top-center"
+                            data-aos-duration="1500"
+                            data-aos-delay="100">
+                                <h3>Full Stack Development</h3>
+                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                            </div>
+                            <div className={AboutMeStyles.offer_item}
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-center"
+                            data-aos-duration="1500"
+                            data-aos-delay="200">
+                                <h3>Backend Development</h3>
+                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                            </div>
+                            <div className={AboutMeStyles.offer_item}
+                            data-aos="fade-up-left"
+                            data-aos-anchor-placement="top-center"
+                            data-aos-duration="1500"
+                            data-aos-delay="300">
+                                <h3>Responsive Design</h3>
+                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                            </div>
                         </div>
-                        <div className={AboutMeStyles.offer_item}
-                        data-aos="fade-up"
-                        data-aos-anchor-placement="top-center"
-                        data-aos-duration="1500"
-                        data-aos-delay="100">
-                            <h3>Backend Development</h3>
-                            <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                        ) : (
+                            <div className={AboutMeStyles.offer_container}>
+                            <div className={AboutMeStyles.offer_item}
+                            data-aos="fade-up-right"
+                            data-aos-anchor-placement="top-center"
+                            data-aos-duration="1500"
+                            data-aos-delay="100">
+                                <h3>Full Stack Development</h3>
+                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                            </div>
+                            <div className={AboutMeStyles.offer_item}
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-center"
+                            data-aos-duration="1500"
+                            data-aos-delay="100">
+                                <h3>Backend Development</h3>
+                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                            </div>
+                            <div className={AboutMeStyles.offer_item}
+                            data-aos="fade-up-left"
+                            data-aos-anchor-placement="top-center"
+                            data-aos-duration="1500"
+                            data-aos-delay="100">
+                                <h3>Responsive Design</h3>
+                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                            </div>
                         </div>
-                        <div className={AboutMeStyles.offer_item}
-                        data-aos="fade-up-left"
-                        data-aos-anchor-placement="top-center"
-                        data-aos-duration="1500"
-                        data-aos-delay="100">
-                            <h3>Responsive Design</h3>
-                            <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
-                        </div>
-                    </div>
+                        )}
                 </div>
             </div>
         </>

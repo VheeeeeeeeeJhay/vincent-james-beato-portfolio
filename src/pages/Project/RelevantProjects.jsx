@@ -1,5 +1,4 @@
 import RelevantProjectsStyles from "./RelevantProjects.module.css"
-import Raiden from "../../assets/raiden.png"
 import Barter from "../../assets/barter.jpg"
 import Inventory from "../../assets/inventory.jpg"
 import TodoList from "../../assets/todo.jpg"

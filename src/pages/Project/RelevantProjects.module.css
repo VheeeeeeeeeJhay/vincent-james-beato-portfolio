@@ -111,4 +111,19 @@
     background-color: #bb86fc;
     color: #fff;
 }
+
+@media (max-width: 600px) {
+    .section {
+        padding-top: 25%;
+    }
+
+    .section_header {
+        font-size: 2rem;
+    }
+
+    .cards_container {
+        display: flex;
+        flex-direction: column;
+    }
+}
     
