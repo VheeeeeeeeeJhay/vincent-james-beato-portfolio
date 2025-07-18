@@ -186,31 +186,6 @@
     width: 40px;
 }
 
-/* Responsive Styles */
-@media (max-width: 600px) {
-    .nav_links {
-        display: none;
-    }
-    
-    .menu_button {
-        display: block;
-    }
-    
-    .mobile_menu {
-        display: block;
-    }
-    
-    .nav_home .nav_img_container {
-        margin: 0 auto;
-    }
-    
-    .nav_home {
-        width: 90%;
-        justify-content: space-between;
-        padding: 5px 1.5rem;
-    }
-}
-
 .nav_img_container {
     display: flex;
     justify-content: center;

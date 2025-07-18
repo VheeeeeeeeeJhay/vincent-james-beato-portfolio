@@ -10,9 +10,10 @@ import { AiOutlineClose } from "react-icons/ai";
 
 function Navbar() {
     const [activeSection, setActiveSection] = useState('home');
-    const projectsSectionRef = useRef(null);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [showMenu, setShowMenu] = useState(false);
     const menuRef = useRef(null);
+    const projectsSectionRef = useRef(null);
 
     const scrollToSection = useCallback((sectionId) => {
         const element = document.getElementById(sectionId);
@@ -20,6 +21,26 @@ function Navbar() {
             element.scrollIntoView({ behavior: 'smooth' });
             setShowMenu(false);
         }
+    }, []);
+
+    // Handle window resize to update mobile state
+    useEffect(() => {
+        const handleResize = () => {
+            const isMobileView = window.innerWidth <= 768;
+            setIsMobile(isMobileView);
+            // Close menu when switching to desktop view
+            if (!isMobileView) {
+                setShowMenu(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        // Call once to set initial state
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     useEffect(() => {
@@ -103,7 +124,7 @@ function Navbar() {
                         ))}
                     </ul>
                 )}
-                {activeSection !== 'home' && (
+                {isMobile && activeSection !== 'home' && (
                     <button 
                         className={`${NavbarStyles.menu_button} ${showMenu ? NavbarStyles.menu_open : ''}`}
                         onClick={(e) => {
@@ -115,31 +136,33 @@ function Navbar() {
                         {showMenu ? <AiOutlineClose size={24} /> : <GiHamburgerMenu size={24} />}
                     </button>
                 )}
-                <div className={`${NavbarStyles.mobile_menu} ${showMenu ? NavbarStyles.mobile_menu_open : ''}`} ref={menuRef}>
-                    <ul className={NavbarStyles.mobile_nav_links}>
-                        {navLinks.map((link) => (
-                            <li key={link.id}>
-                                <a
-                                    href={`#${link.id}`}
-                                    className={activeSection === link.id ? NavbarStyles.active : ''}
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        scrollToSection(link.id);
-                                    }}
-                                >
-                                    {link.label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
+                {isMobile && (
+                    <div className={`${NavbarStyles.mobile_menu} ${showMenu ? NavbarStyles.mobile_menu_open : ''}`} ref={menuRef}>
+                        <ul className={NavbarStyles.mobile_nav_links}>
+                            {navLinks.map((link) => (
+                                <li key={link.id}>
+                                    <a
+                                        href={`#${link.id}`}
+                                        className={activeSection === link.id ? NavbarStyles.active : ''}
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            scrollToSection(link.id);
+                                        }}
+                                    >
+                                        {link.label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
 
-                    <div className={NavbarStyles.mobile_menu_contacts}>
-                        <h5>Contact Me</h5>
-                        <p>vheebhee7@gmail.com</p>
-                        <p>+63 928 071 5822</p>
-                        <p>Itogon Benuet | Baguio City, Philippines</p>
+                        <div className={NavbarStyles.mobile_menu_contacts}>
+                            <h5>Contact Me</h5>
+                            <p>vheebhee7@gmail.com</p>
+                            <p>+63 928 071 5822</p>
+                            <p>Itogon Benuet | Baguio City, Philippines</p>
+                        </div>
                     </div>
-                </div>
+                )}
             </nav>
 
             <main className={NavbarStyles.main}>

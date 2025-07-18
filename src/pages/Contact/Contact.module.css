@@ -1,6 +1,6 @@
 /* === General Section Styling === */
 .section {
-    padding-top: 10%;
+    padding: 10% 0;
 }
 
 .section_header {
@@ -120,8 +120,8 @@
 
 .img_corner {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     z-index: 4;
     margin: 1rem;
     opacity: 0.8;
@@ -223,7 +223,7 @@
 /* === Responsive Design === */
 @media (max-width: 600px) {
     section {
-        padding-top: 25%;
+        padding: 25% 0;
     }
 
     .container_1 ,
