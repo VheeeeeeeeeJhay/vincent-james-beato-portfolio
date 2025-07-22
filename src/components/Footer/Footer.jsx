@@ -2,10 +2,11 @@ import styles from "./Footer.module.css";
 import {
   FaGithub,
   FaLinkedinIn,
-  FaTwitter,
   FaEnvelope,
-  FaMapPin,
+  FaMapPin
 } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import onlinejobs from "../../assets/onlinejobs.jpeg";
 
 function Footer() {
   return (
@@ -30,6 +31,7 @@ function Footer() {
         {/* Contact Info */}
         <div className={styles.block}>
           <h4>CONTACT</h4>
+          <p><FaPhoneAlt style={{color: "#bb86fc"}} /> +63 928 071 5822</p>
           <a href="mailto:vheebhee7@gmail.com"><FaEnvelope /> vheebhee7@gmail.com</a>
           <p><FaMapPin style={{color: "#bb86fc"}} /> Based in Itogon, Benguet and Baguio City, Philippines</p>
         </div>
@@ -40,7 +42,7 @@ function Footer() {
           <div className={styles.socials}>
             <a href="https://github.com/vheebhee7" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
             <a href="https://linkedin.com/in/vheebhee7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
-            <a href="https://twitter.com/vheebhee7" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
+            <img src={onlinejobs} alt="onlinejobs" className={styles.about_img}/>
           </div>
         </div>
       </div>

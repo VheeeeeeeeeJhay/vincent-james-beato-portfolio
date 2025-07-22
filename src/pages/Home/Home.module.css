@@ -49,6 +49,7 @@
     margin-bottom: 0.5rem;
     color: transparent;
     background: linear-gradient(to right, #b65fcf, #4d0f28, #311432);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -62,14 +63,20 @@
 .hero_links {
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    min-height: 60px;
 }
 
 .hero_links a {
     color: #fff;
     font-size: 2rem;
     transition: color 0.3s ease;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .hero_links a:hover {
@@ -83,10 +90,10 @@
 }
 
 .hero_links img {
-    padding-top: 3px;
-    width: 28px;
-    height: 28px;
-    border-radius: 3px;
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+    display: block;
 }
 
 .hero_links img:hover {
@@ -94,10 +101,17 @@
     filter: invert(90%);
 }
 
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .divider {
     position: relative;
     width: 2px;
     height: 35px;
+    margin: 0 1rem;
 }
 
 .divider::before {
@@ -120,10 +134,10 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 12px !important;
+    font-size: 14px !important;
     margin: 0;
     height: 2rem;
-    padding: 0 10px;
+    padding: 7px 10px;
     text-decoration: none;
     font-family: inherit;
 }
@@ -157,14 +171,19 @@
         height: calc(50%);
         width: 100%;
         display: flex;
+        padding-top: 20%;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
     }
 
+    .divider {
+        display: none;
+    }
+
     .hero_img {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
         position: absolute;
         top: -5%;
         left: 50%;
@@ -189,4 +208,11 @@
         justify-content: center;
         gap: 0.5rem;
     }
+
+    .hero_button {
+        font-size: 12px !important;
+        padding: 5px 10px;
+    }
+
+
 }

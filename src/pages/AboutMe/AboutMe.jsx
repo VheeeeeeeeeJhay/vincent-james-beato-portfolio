@@ -33,7 +33,7 @@ function AboutMe() {
                         <br />
 
                         <div className={AboutMeStyles.contact_info}>
-                            <p><FaPhoneAlt style={{color: "#bb86fc"}} /> &nbsp;+63 917 555 5555</p>
+                            <p><FaPhoneAlt style={{color: "#bb86fc"}} /> &nbsp;+63 928 071 5822</p>
                             <p><MdEmail style={{color: "#bb86fc"}} /> &nbsp;vheebhee7@gmail.com</p>
                         </div>
                     </div>
@@ -63,11 +63,15 @@ function AboutMe() {
                             <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
                             <div className={AboutMeStyles.timeline_info}>
                                 <h3>BAGUIO CITY'S SMART CITY COMMAND AND CONTROL CENTER</h3>
+                                <p className={AboutMeStyles.timeline_info_role}>Full Stack Developer</p>
                                 <div className={AboutMeStyles.timeline_sub_info}>
                                     <h4>Baguio City</h4>
                                     <h4>FEBRUARY 2025 - MAY 2025</h4>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                                <p>Created a web system that is used to create reports caused by incidents and emergency response, to help with recording and tracking cases much faster.</p>
+                                <p>Designed the web system’s user interface using Figma to help guide with the development process.</p>
+                                <p>Used VueJs for the frontend development, implemented composition api with script setup for syntax. Used Laravel as for the backend development, implemented RESTful API to allow the communication with the frontend.</p>
+                                <p>Implemented Axios to handle HTTP requests between the backend and frontend of the web system, Pinia for the web system’s state management, and Github for version control.</p>
                             </div>
                         </div>
                     </div>
@@ -92,7 +96,7 @@ function AboutMe() {
                                     <h4>University of Baguio</h4>
                                     <h4>2021 - 2025</h4>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                                <p>A fresh graduate in Computer Science. Learn various skills and knowledge necessary and related to Software Development. </p>
                             </div>
                         </div>
                     </div>
@@ -104,12 +108,12 @@ function AboutMe() {
                         <div className={AboutMeStyles.timeline_item}>
                             <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
                             <div className={AboutMeStyles.timeline_info}>
-                                <h3>SHS | Information and Communication Technology (ICT)                                </h3>
+                                <h3>Senior High School | Information and Communication Technology (ICT)                                </h3>
                                 <div className={AboutMeStyles.timeline_sub_info}>
                                     <h4>University of Baguio</h4>
                                     <h4>2019 – 2021</h4>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                                <p>Graduated in Information and Communication Technology (ICT) specialization in Computer System Servicing (CSS).</p>
                             </div>
                         </div>
                     </div>
@@ -126,7 +130,7 @@ function AboutMe() {
                                     <h4>Computer Arts Technological College</h4>
                                     <h4>2016 – 2019</h4>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, harum temporibus exercitationem repellendus, enim nulla eos molestiae possimus, vero reiciendis dignissimos tenetur expedita culpa! Modi dignissimos qui laboriosam impedit aut!</p>
+                                {/* <p>Graduated in Information and Communication Technology (ICT) specialization in Computer System Servicing (CSS).</p> */}
                             </div>
                         </div>
                     </div>
@@ -144,16 +148,16 @@ function AboutMe() {
                             data-aos-anchor-placement="top-center"
                             data-aos-duration="1500"
                             data-aos-delay="100">
-                                <h3>Full Stack Development</h3>
-                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                                <h3>Full Stack Web Application Development</h3>
+                                <p>Capable of developing complete web applications from frontend to backend using Laravel, MySQL, Vue.js, and Inertia.js. I can structure robust backend systems and connect them to interactive frontends, delivering functional systems for real-world use cases like inventory tracking and food ordering.</p>
                             </div>
                             <div className={AboutMeStyles.offer_item}
                             data-aos="fade-up"
                             data-aos-anchor-placement="top-center"
                             data-aos-duration="1500"
                             data-aos-delay="200">
-                                <h3>Backend Development</h3>
-                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                                <h3>Web & Mobile Application Development</h3>
+                                <p>Proficient in building both web and mobile applications using modern technologies such as React Native, Vue.js, Laravel, and Expo Go. Experienced in developing functional systems like inventory management tools, barter platforms, and to-do apps that solve real-world problems for users.</p>
                             </div>
                             <div className={AboutMeStyles.offer_item}
                             data-aos="fade-up-left"

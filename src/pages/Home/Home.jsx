@@ -19,12 +19,6 @@ function Home({ id }) {
     return (
         <section id={id} className={HomeStyles.home}>
             <div className={HomeStyles.home_container}>
-                {/* <div className={HomeStyles.hero_container}
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-center"
-                data-aos-duration="1000"
-                data-aos-delay="100"
-                > */}
                 {isMobile ? (
                     <div 
                         className={HomeStyles.hero_container}
@@ -45,35 +39,39 @@ function Home({ id }) {
                             <p className={HomeStyles.hero_role}>Computer Science Graduate | Developer</p>
 
                             <div className={HomeStyles.hero_links}>
-                                <a
-                                    href="https://github.com/VheeeeeeeeeJhay"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="GitHub Profile"
-                                >
-                                    <FaGithubSquare />
-                                </a>
-                                <a
-                                    href="https://linkedin.com/in/vincent-james-beato-8a2818351"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="LinkedIn Profile"
-                                >
-                                    <FaLinkedin />
-                                </a>
-                                <a
-                                    href="mailto:vheebhee7@gmail.com"
-                                    aria-label="Send Email"
-                                >
-                                    <MdEmail />
-                                </a>
-                                <img src={onlinejobs} alt="Online Jobs" />
+                                <div className={HomeStyles.link}>
+                                    <a
+                                        href="https://github.com/VheeeeeeeeeJhay"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="GitHub Profile"
+                                    >
+                                        <FaGithubSquare />
+                                    </a>
+                                    <a
+                                        href="https://linkedin.com/in/vincent-james-beato-8a2818351"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="LinkedIn Profile"
+                                    >
+                                        <FaLinkedin />
+                                    </a>
+                                    <a
+                                        href="mailto:vheebhee7@gmail.com"
+                                        aria-label="Send Email"
+                                    >
+                                        <MdEmail />
+                                    </a>
+                                    <img src={onlinejobs} alt="Online Jobs" />
+                                </div>
                                 
 
                                 <span className={HomeStyles.divider}></span>
 
-                                <a className={HomeStyles.hero_button} onClick={scrollToProjects}>View Projects</a>
-                                <a className={HomeStyles.hero_button} href={resume} download>Download Resume</a>
+                                <div className={HomeStyles.link}>
+                                    <a className={HomeStyles.hero_button} onClick={scrollToProjects}>View Projects</a>
+                                    <a className={HomeStyles.hero_button} href={resume} download>Download Resume</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -97,35 +95,39 @@ function Home({ id }) {
                             <p className={HomeStyles.hero_role}>Computer Science Graduate | Developer</p>
 
                             <div className={HomeStyles.hero_links}>
-                                <a
-                                    href="https://github.com/VheeeeeeeeeJhay"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="GitHub Profile"
-                                >
-                                    <FaGithubSquare />
-                                </a>
-                                <a
-                                    href="https://linkedin.com/in/vincent-james-beato-8a2818351"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="LinkedIn Profile"
-                                >
-                                    <FaLinkedin />
-                                </a>
-                                <a
-                                    href="mailto:vheebhee7@gmail.com"
-                                    aria-label="Send Email"
-                                >
-                                    <MdEmail />
-                                </a>
-                                <img src={onlinejobs} alt="Online Jobs" />
+                                <div className={HomeStyles.link}>
+                                    <a
+                                        href="https://github.com/VheeeeeeeeeJhay"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="GitHub Profile"
+                                    >
+                                        <FaGithubSquare />
+                                    </a>
+                                    <a
+                                        href="https://linkedin.com/in/vincent-james-beato-8a2818351"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="LinkedIn Profile"
+                                    >
+                                        <FaLinkedin />
+                                    </a>
+                                    <a
+                                        href="mailto:vheebhee7@gmail.com"
+                                        aria-label="Send Email"
+                                    >
+                                        <MdEmail />
+                                    </a>
+                                    <img src={onlinejobs} alt="Online Jobs" />
+                                </div>
                                 
 
                                 <span className={HomeStyles.divider}></span>
 
-                                <a className={HomeStyles.hero_button} onClick={scrollToProjects}>View Projects</a>
-                                <a className={HomeStyles.hero_button} href={resume} download>Download Resume</a>
+                                <div className={HomeStyles.link}>
+                                    <a className={HomeStyles.hero_button} onClick={scrollToProjects}>View Projects</a>
+                                    <a className={HomeStyles.hero_button} href={resume} download>Download Resume</a>
+                                </div>
                             </div>
                         </div>
                     </div>

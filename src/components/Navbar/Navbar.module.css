@@ -84,19 +84,30 @@
 
 /* Mobile Menu Button */
 .menu_button {
-    display: none;
+    display: none; /* Hidden by default, shown in mobile view */
     background: none;
     border: none;
     color: white;
     cursor: pointer;
     z-index: 1000;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .menu_button:hover {
     background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Show menu button in mobile view */
+@media (max-width: 600px) {
+    .menu_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Mobile Menu */
@@ -237,7 +248,7 @@
     margin: 0 10%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .nav_home {
         left: 50%;
         transform: translateX(-50%);

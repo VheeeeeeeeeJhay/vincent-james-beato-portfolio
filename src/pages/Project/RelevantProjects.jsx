@@ -22,7 +22,7 @@ function RelevantProjects() {
                         <img className={RelevantProjectsStyles.card_img} src={Barter} alt="Raiden" />
                         <div className={RelevantProjectsStyles.card_info}>
                             <h3>Swapii: Barter Web System</h3>
-                            <p>Project Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                            <p>Created a web system used to trade or barter school-related items among the students.</p>
                         </div>
                         <div className={RelevantProjectsStyles.tags_container}>
                             <p>VueJs</p>
@@ -43,7 +43,7 @@ function RelevantProjects() {
                         <img className={RelevantProjectsStyles.card_img} src={Inventory} alt="Inventory"/>
                         <div className={RelevantProjectsStyles.card_info}>
                             <h3>Inventory System for Poultry Business</h3>
-                            <p>Project Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                            <p>Created a web system used to monitor incoming and outgoing poultry products and also track inventory of the business.</p>
                         </div>
                         <div className={RelevantProjectsStyles.tags_container}>
                             <p>Laravel</p>
@@ -63,7 +63,7 @@ function RelevantProjects() {
                         <img className={RelevantProjectsStyles.card_img} src={TodoList} alt="TodoList"/>
                         <div className={RelevantProjectsStyles.card_info}>
                             <h3>Todo List Application</h3>
-                            <p>Project Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                            <p>Created a to-do list application to track and organize tasks.</p>
                         </div>
                         <div className={RelevantProjectsStyles.tags_container}>
                             <p>React Native</p>
@@ -83,7 +83,7 @@ function RelevantProjects() {
                         <img className={RelevantProjectsStyles.card_img} src={FoodOrdering} alt="FoodOrdering"/>
                         <div className={RelevantProjectsStyles.card_info}>
                             <h3>Food Ordering System</h3>
-                            <p>Project Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                            <p>Created a web application that allows users to browse and order Filipino cuisines.</p>
                         </div>
                         <div className={RelevantProjectsStyles.tags_container}>
                             <p>Laravel</p>
