@@ -68,10 +68,7 @@ function AboutMe() {
                                     <h4>Baguio City</h4>
                                     <h4>FEBRUARY 2025 - MAY 2025</h4>
                                 </div>
-                                <p>Created a web system that is used to create reports caused by incidents and emergency response, to help with recording and tracking cases much faster.</p>
-                                <p>Designed the web system’s user interface using Figma to help guide with the development process.</p>
-                                <p>Used VueJs for the frontend development, implemented composition api with script setup for syntax. Used Laravel as for the backend development, implemented RESTful API to allow the communication with the frontend.</p>
-                                <p>Implemented Axios to handle HTTP requests between the backend and frontend of the web system, Pinia for the web system’s state management, and Github for version control.</p>
+                                <p>Created a web system that is used to create reports related to incidents and emergency response, to aid with recording and tracking of cases. Designed the web system’s user interface using Figma to help guide with the development process. Used Vue 3 for the frontend, implemented composition api with script setup for syntax. Used Laravel 11 for the backend, implemented RESTful API to allow the communication with the frontend. Implemented Axios to handle HTTP requests between the backend and frontend of the web system, Pinia for the web system’s state management, and Github for version control.</p>
                             </div>
                         </div>
                     </div>

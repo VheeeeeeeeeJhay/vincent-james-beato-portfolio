@@ -62,7 +62,9 @@ function Home({ id }) {
                                     >
                                         <MdEmail />
                                     </a>
-                                    <img src={onlinejobs} alt="Online Jobs" />
+                                    <a href="https://www.onlinejobs.ph/jobseekers/info/4308174" target="_blank" rel="noopener noreferrer" aria-label="Online Jobs">
+                                        <img src={onlinejobs} alt="Online Jobs" />
+                                    </a>
                                 </div>
                                 
 
@@ -118,7 +120,9 @@ function Home({ id }) {
                                     >
                                         <MdEmail />
                                     </a>
-                                    <img src={onlinejobs} alt="Online Jobs" />
+                                    <a href="https://www.onlinejobs.ph/jobseekers/info/4308174" target="_blank" rel="noopener noreferrer" aria-label="Online Jobs">
+                                        <img src={onlinejobs} alt="Online Jobs" />
+                                    </a>
                                 </div>
                                 
 
