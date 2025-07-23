@@ -1,6 +1,9 @@
 import ContactStyles from "./Contact.module.css"
 import Vhee from "../../assets/about_me.jpg"
 import useMediaQuery from "../../hooks/useMediaQuery"
+import { FaMapPin } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Contact() {
     const isMobile = useMediaQuery(600)
@@ -29,12 +32,22 @@ function Contact() {
                     data-aos-delay="200"
                     >
                     <div className={ContactStyles.img_container}>
-                        <img src={Vhee} alt="Vhee" className={ContactStyles.contact_img} />
+                        {/* <img src={Vhee} alt="Vhee" className={ContactStyles.contact_img} />
                         <div className={ContactStyles.box}>
                             <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_1}`}></div>
                             <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_2}`}></div>
                             <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_3}`}></div>
                             <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_4}`}></div>
+                        </div> */}
+                        <div className={ContactStyles.h3_divider_2}>
+                            <h3>My Contact <span className={ContactStyles.span_2}>Details</span></h3>
+                            <span className={ContactStyles.divider_2}></span>
+                        </div>
+
+                        <div className={ContactStyles.contact_info}>
+                            <p><FaMapPin style={{color: "#bb86fc"}} /> &nbsp;Itogon, Benguet and Baguio City, Philippines</p>
+                            <p><FaPhoneAlt style={{color: "#bb86fc"}} /> &nbsp;+63 928 071 5822</p>
+                            <p><MdEmail style={{color: "#bb86fc"}} /> &nbsp;vheebhee7@gmail.com</p>
                         </div>
                     </div>
 
@@ -67,12 +80,16 @@ function Contact() {
                         data-aos-duration="1500"
                         data-aos-delay="200"
                         >
-                            <img src={Vhee} alt="Vhee" className={ContactStyles.contact_img} />
+                            {/* <img src={Vhee} alt="Vhee" className={ContactStyles.contact_img} />
                             <div className={ContactStyles.box}>
                                 <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_1}`}></div>
                                 <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_2}`}></div>
                                 <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_3}`}></div>
                                 <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_4}`}></div>
+                            </div> */}
+                            <div className={ContactStyles.h3_divider_2}>
+                                <h3>My Contact <span className={ContactStyles.span_2}>Details</span></h3>
+                                <span className={ContactStyles.divider_2}></span>
                             </div>
                         </div>
 
