@@ -31,7 +31,7 @@ function RelevantProjects() {
                             <p>ReactJs</p>
                             <p>CSS</p>
                             <p>JavaScript</p>
-                            <p>Firebase</p>
+                            {/* <p>Firebase</p> */}
                         </div>
                         <div className={RelevantProjectsStyles.card_buttons}>
                             <a className={RelevantProjectsStyles.card_button} href="https://github.com/VheeeeeeeeeJhay/vincent-james-beato-portfolio.git" target="_blank" rel="noopener noreferrer">Source Code</a>
