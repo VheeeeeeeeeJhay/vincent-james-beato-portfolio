@@ -1,122 +1,80 @@
-import ContactStyles from "./Contact.module.css"
-import Vhee from "../../assets/about_me.jpg"
-import useMediaQuery from "../../hooks/useMediaQuery"
-import { FaMapPin } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
+import ContactStyles from "./Contact.module.css";
+import Vhee from "../../assets/about_me.jpg";
 import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import onlinejobs from "../../assets/onlinejobs.jpeg";
+import { FaGithub } from "react-icons/fa";
 
 function Contact() {
-    const isMobile = useMediaQuery(600)
-
     return (
-        <>
-            <div className={ContactStyles.section}>
-                <h1 className={ContactStyles.section_header}
+        <section className={ContactStyles.section}>
+            <h1
+                className={ContactStyles.section_header}
                 data-aos="fade-up"
-                data-aos-anchor-placement="top-center"
-                data-aos-duration="1000">Contact&nbsp;<span>Me</span></h1>
+                data-aos-duration="1000"
+            >
+                Contact <span>Me</span>
+            </h1>
 
-                <div className={ContactStyles.container_1}
+            <div
+                className={ContactStyles.container_1}
                 data-aos="fade-up"
-                data-aos-anchor-placement="top-center"
-                data-aos-duration="1500"
-                data-aos-delay="100">
-                    <p>Send me a message and I'll get back to you as soon as possible. I'm looking forward to hearing from you!</p>
-                </div>
-
-                {isMobile ? (
-                    <div className={ContactStyles.container_2}
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-duration="1500"
-                    data-aos-delay="200"
-                    >
-                    <div className={ContactStyles.img_container}>
-                        {/* <img src={Vhee} alt="Vhee" className={ContactStyles.contact_img} />
-                        <div className={ContactStyles.box}>
-                            <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_1}`}></div>
-                            <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_2}`}></div>
-                            <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_3}`}></div>
-                            <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_4}`}></div>
-                        </div> */}
-                        <div className={ContactStyles.h3_divider_2}>
-                            <h3>My Contact <span className={ContactStyles.span_2}>Details</span></h3>
-                            <span className={ContactStyles.divider_2}></span>
-                        </div>
-
-                        <div className={ContactStyles.contact_info}>
-                            <p><FaMapPin style={{color: "#bb86fc"}} /> &nbsp;Itogon, Benguet and Baguio City, Philippines</p>
-                            <p><FaPhoneAlt style={{color: "#bb86fc"}} /> &nbsp;+63 928 071 5822</p>
-                            <p><MdEmail style={{color: "#bb86fc"}} /> &nbsp;vheebhee7@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div className={ContactStyles.contact_form}
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-duration="1500"
-                    data-aos-delay="200"
-                    >
-                       <div className={ContactStyles.form}>
-                            <div className={ContactStyles.h3_divider_2}>
-                                <h3>Send Me A <span className={ContactStyles.span_2}>Message</span></h3>
-                                <span className={ContactStyles.divider_2}></span>
-                            </div>
-                            <form action="">
-                                <input type="text" placeholder="Name" />
-                                <input type="email" placeholder="Email" />
-                                <textarea placeholder="Message"></textarea>
-                                <button type="submit">Send Message</button>
-                            </form>
-                        </div> 
-                    </div>
-                </div>
-                ) : (
-                    <div className={ContactStyles.container_2}
-                    >
-                        <div className={ContactStyles.img_container}
-                        data-aos="fade-down-right"
-                        data-aos-anchor-placement="top-center"
-                        data-aos-duration="1500"
-                        data-aos-delay="200"
-                        >
-                            {/* <img src={Vhee} alt="Vhee" className={ContactStyles.contact_img} />
-                            <div className={ContactStyles.box}>
-                                <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_1}`}></div>
-                                <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_2}`}></div>
-                                <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_3}`}></div>
-                                <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_4}`}></div>
-                            </div> */}
-                            <div className={ContactStyles.h3_divider_2}>
-                                <h3>My Contact <span className={ContactStyles.span_2}>Details</span></h3>
-                                <span className={ContactStyles.divider_2}></span>
-                            </div>
-                        </div>
-
-                        <div className={ContactStyles.contact_form}
-                        data-aos="fade-down-left"
-                        data-aos-anchor-placement="top-center"
-                        data-aos-duration="1500"
-                        data-aos-delay="200"
-                        >
-                            <div className={ContactStyles.form}>
-                                <div className={ContactStyles.h3_divider_2}>
-                                    <h3>Send Me A <span className={ContactStyles.span_2}>Message</span></h3>
-                                    <span className={ContactStyles.divider_2}></span>
-                                </div>
-                                <form action="">
-                                    <input type="text" placeholder="Name" />
-                                    <input type="email" placeholder="Email" />
-                                    <textarea placeholder="Message"></textarea>
-                                    <button type="submit">Send Message</button>
-                                </form>
-                            </div> 
-                        </div>
-                    </div>
-                )}
+                data-aos-duration="1200"
+                data-aos-delay="100"
+            >
+                <p>Feel free to reach out. I’d love to connect with you, hear your ideas, or simply have a quick chat.</p>
             </div>
-        </>
-    )
+
+            {/* === Image Section === */}
+            <div
+                className={ContactStyles.img_wrapper}
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+            >
+                <img src={Vhee} alt="Vhee" className={ContactStyles.contact_img} />
+                <div className={ContactStyles.box}>
+                    <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_1}`}></div>
+                    <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_2}`}></div>
+                    <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_3}`}></div>
+                    <div className={`${ContactStyles.img_corner} ${ContactStyles.img_corner_border_4}`}></div>
+                </div>
+            </div>
+
+            {/* === Contact Icons === */}
+            <div className={ContactStyles.icon_grid}>
+                <div className={ContactStyles.contact_item}>
+                    <div className={ContactStyles.icon_circle}><MdEmail /></div>
+                    <p>Email</p>
+                    <a href="mailto:vheebhee7@gmail.com">vheebhee7@gmail.com</a>
+                </div>
+                <div className={ContactStyles.contact_item}>
+                    <div className={ContactStyles.icon_circle}><FaPhoneAlt /></div>
+                    <p>Phone</p>
+                    <a href="tel:+639280715822">+63 928 071 5822</a>
+                </div>
+                <a href="https://linkedin.com/in/vincent-james-beato-8a2818351" target="_blank" rel="noopener noreferrer" className={ContactStyles.contact_link}>
+                    <div className={ContactStyles.contact_item}>
+                        <div className={ContactStyles.icon_circle}><FaLinkedin /></div>
+                        <p>LinkedIn</p>
+                    </div>
+                </a>
+                <a href="https://github.com/VheeeeeeeeeJhay" target="_blank" rel="noopener noreferrer" className={ContactStyles.contact_link}>
+                    <div className={ContactStyles.contact_item}>
+                        <div className={ContactStyles.icon_circle}><FaGithub /></div>
+                        <p>GitHub</p>
+                    </div>
+                </a>
+                <a href="https://onlinejobs.ph/jobseekers/info/4308174" target="_blank" rel="noopener noreferrer" className={ContactStyles.contact_link}>
+                    <div className={ContactStyles.contact_item}>
+                        <div className={ContactStyles.icon_circle}><img src={onlinejobs} alt="OnlineJobs" /></div>
+                        <p>OnlineJobs</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    );
 }
 
-export default Contact
+export default Contact;

@@ -1,93 +1,30 @@
-/* === General Section Styling === */
 .section {
     padding: 10% 0;
 }
-
 .section_header {
     font-size: 3rem;
     text-align: center;
-    padding-top: 2rem;
     color: #fff;
-    margin: 0;
-    padding: 0;
 }
-
 .section_header span {
     color: #bb86fc;
 }
 
-/* === Container Blocks === */
-.container_1,
-.container_2 {
-    padding: 0 8%;
-    /* max-width: 1400px; */
-    margin: auto;
-}
-
 .container_1 {
-    margin-bottom: 3rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
 }
-
-.container_2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-}
-
-@media (max-width: 950px) {
-    .container_2 {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* === Headings with Divider === */
-.h3_divider,
-.h3_divider_2,
-.h3_divider_3 {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.h3_divider h3,
-.h3_divider_2 h3,
-.h3_divider_3 h3 {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0;
-    white-space: nowrap;
-}
-
-.divider,
-.divider_2 {
-    flex-grow: 1;
-    border-bottom: 4px solid #bb86fc;
-}
-
-.span,
-.span_2 {
-    color: #bb86fc;
-}
-
-/* === Intro Paragraph === */
 .container_1 p {
     color: #ccc;
-    text-align: center;
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
+    font-size: 1.15rem;
 }
 
-/* === Contact Image Box === */
-.img_container {
+/* === Image Wrapper Centered === */
+.img_wrapper {
     position: relative;
-    aspect-ratio: 3/4;
-    width: 100%;
-    /* max-width: 450px; */
-    height: 450px;
-    margin: auto;
+    width: 200px;
+    aspect-ratio: 3 / 4;
+    margin: 0 auto 3rem;
 }
 
 .contact_img {
@@ -98,16 +35,15 @@
     filter: grayscale(100%);
     border-radius: 8px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    z-index: 2;
     transition: filter 0.4s ease;
+    z-index: 2;
 }
 
 .contact_img:hover {
     filter: grayscale(0%);
-    cursor: pointer;
 }
 
-/* === Corner Borders === */
+/* === Decorative Corners === */
 .box {
     position: absolute;
     top: 0;
@@ -119,136 +55,139 @@
 }
 
 .img_corner {
+    width: 30px;
+    height: 30px;
     position: absolute;
-    width: 40px;
-    height: 40px;
     z-index: 4;
-    margin: 1rem;
+    margin: 0.75rem;
     opacity: 0.8;
-    transition: opacity 0.3s;
-}
-
-.img_corner:hover {
-    opacity: 1;
 }
 
 .img_corner_border_1 {
     top: 0;
     left: 0;
-    border: 10px solid transparent;
-    border-left-color: #bb86fc;
-    border-top-color: #bb86fc;
-    border-radius: 5px;
+    border-top: 8px solid #bb86fc;
+    border-left: 8px solid #bb86fc;
+    border-radius: 3px;
 }
 .img_corner_border_2 {
     top: 0;
     right: 0;
-    border: 10px solid transparent;
-    border-right-color: #bb86fc;
-    border-top-color: #bb86fc;
-    border-radius: 5px;
+    border-top: 8px solid #bb86fc;
+    border-right: 8px solid #bb86fc;
+    border-radius: 3px;
 }
 .img_corner_border_3 {
     bottom: 0;
     left: 0;
-    border: 10px solid transparent;
-    border-left-color: #bb86fc;
-    border-bottom-color: #bb86fc;
-    border-radius: 5px;
+    border-bottom: 8px solid #bb86fc;
+    border-left: 8px solid #bb86fc;
+    border-radius: 3px;
 }
 .img_corner_border_4 {
     bottom: 0;
     right: 0;
-    border: 10px solid transparent;
-    border-right-color: #bb86fc;
-    border-bottom-color: #bb86fc;
-    border-radius: 5px;
+    border-bottom: 8px solid #bb86fc;
+    border-right: 8px solid #bb86fc;
+    border-radius: 3px;
 }
 
-/* === Contact Form === */
-.contact_form {
-    width: 100%;
-    margin-bottom: 10%;
-}
-
-.contact_form form {
-    background-color: rgba(43, 42, 42, 0.5);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+/* === Icon Grid === */
+.icon_grid {
     display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1.5rem;
 }
 
-.contact_form input,
-.contact_form textarea {
-    background-color: rgba(43, 42, 42, 0.3);
-    border: none;
-    border-radius: 5px;
-    padding: 0.75rem 1rem;
-    color: #fff;
-    font-size: 1rem;
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
-    transition: outline 0.2s ease;
+/* === Contact Link === */
+.contact_link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    display: block;
 }
 
-.contact_form input:focus,
-.contact_form textarea:focus {
-    outline: 2px solid #bb86fc;
+.contact_link:hover {
+    transform: translateY(-5px);
 }
 
-.contact_form textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-/* === Button === */
-.contact_form button {
-    background: #311432;
-    color: white;
-    font-weight: bold;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+/* === Icon Item === */
+.contact_item {
+    text-align: center;
+    width: 140px;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact_item:hover {
+    background-color: rgba(187, 134, 252, 0.1);
+}
+
+.icon_circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(43, 42, 42, 0.5);
+    color: #bb86fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    margin: 0 auto 1rem;
     transition: all 0.3s ease;
 }
 
-.contact_form button:hover {
-    background: #4d0f28;
+.icon_circle:hover {
+    background-color: rgba(68, 28, 68, 0.5);
+    color: #fff;
+    transform: scale(1.05);
 }
 
-/* === Responsive Design === */
+.icon_circle img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.contact_item p {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.contact_item p {
+    color: #fff;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contact_link:hover .contact_item p {
+    color: #bb86fc;
+}
+
+/* === Mobile Fixes === */
 @media (max-width: 600px) {
-    section {
-        padding: 25% 0;
-    }
-
-    .container_1 ,
-    .container_2 {
-        padding: 0;
-    }
-
     .section_header {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
-    .contact_form {
-        padding: 1rem;
+    .img_wrapper {
+        width: 150px;
     }
 
-    .divider_2>h3 {
-        font-size: .75rem;
+    .icon_grid {
+        gap: 1.5rem;
     }
 
-    .img_container {
-        width: 50vw;
-        height: 35vh;
-    }
-
-    .container_2 {
-        gap: 0;
+    .icon_circle {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
     }
 }
