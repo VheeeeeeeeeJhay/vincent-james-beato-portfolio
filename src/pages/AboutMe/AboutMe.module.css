@@ -164,14 +164,16 @@
 }
 
 .offer_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-items: stretch;
     gap: 1rem;
 }
 
 .offer_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     width: 100%;
 }
@@ -257,9 +259,10 @@
     }
 
     .offer_container {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: stretch;
+        align-items: stretch;
         gap: 1rem;
     }
 
