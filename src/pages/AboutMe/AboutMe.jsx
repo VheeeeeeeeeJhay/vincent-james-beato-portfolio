@@ -146,7 +146,7 @@ function AboutMe() {
                             data-aos-duration="1500"
                             data-aos-delay="100">
                                 <h3>Full Stack Web Application Development</h3>
-                                <p>Capable of developing complete web applications from frontend to backend using Laravel, MySQL, Vue.js, and Inertia.js. I can structure robust backend systems and connect them to interactive frontends, delivering functional systems for real-world use cases like inventory tracking and food ordering.</p>
+                                <p>I develop full stack web applications using Laravel, MySQL, Vue.js, and TailwindCSS.</p>
                             </div>
                             <div className={AboutMeStyles.offer_item}
                             data-aos="fade-up"
@@ -154,7 +154,7 @@ function AboutMe() {
                             data-aos-duration="1500"
                             data-aos-delay="200">
                                 <h3>Web & Mobile Application Development</h3>
-                                <p>Proficient in building both web and mobile applications using modern technologies such as React Native, Vue.js, Laravel, and Expo Go. Experienced in developing functional systems like inventory management tools, barter platforms, and to-do apps that solve real-world problems for users.</p>
+                                <p>I have experience in building both web and mobile applications using modern technologies such as React Native, Vue.js, Laravel, and Expo Go.</p>
                             </div>
                             <div className={AboutMeStyles.offer_item}
                             data-aos="fade-up-left"
@@ -162,7 +162,7 @@ function AboutMe() {
                             data-aos-duration="1500"
                             data-aos-delay="300">
                                 <h3>Responsive Design</h3>
-                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                                <p>I have experience in creating responsive designs that work across different devices and screen sizes.</p>
                             </div>
                         </div>
                         ) : (
@@ -173,7 +173,7 @@ function AboutMe() {
                             data-aos-duration="1500"
                             data-aos-delay="100">
                                 <h3>Full Stack Development</h3>
-                                <p>With a strong foundation in computer science and a passion for web development, I am eager to contribute to the success of your projects. I am committed to learning and adapting to new technologies, and I am excited to bring my skills to your team.</p>
+                                <p>I am </p>
                             </div>
                             <div className={AboutMeStyles.offer_item}
                             data-aos="fade-up"

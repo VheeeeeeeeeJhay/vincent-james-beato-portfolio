@@ -5,7 +5,8 @@ import Portfolio from "../../assets/web_portfolio.png"
 import Dashboard from "../../assets/Dashboard.png"
 import Swapii from "../../assets/Swapii.png"
 import Inventory from "../../assets/Inventory.png"
-import todo from "../../assets/todo.jpg"
+import todo from "../../assets/todo1.jpg"
+import redesign from "../../assets/redesign.png"
 
 function RelevantProjects() {
     return (
@@ -17,6 +18,25 @@ function RelevantProjects() {
                 data-aos-duration="1000">Relevant&nbsp;<span>Projects</span></h1>
                 
                 <div className={RelevantProjectsStyles.cards_container}>
+                <div className={RelevantProjectsStyles.card}
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-center"
+                        data-aos-duration="2500"
+                        data-aos-delay="100">
+                        <img className={RelevantProjectsStyles.card_img} src={redesign} alt="Portfolio" />
+                        <div className={RelevantProjectsStyles.card_info}>
+                            <h3>Landing Page</h3>
+                            <p>Created a mockup redesign of a home page as an assignment. It is a single page application that is easy to navigate and use. Since this is a mockup, no backend was implemented only frontend was used.</p>
+                        </div>
+                        <div className={RelevantProjectsStyles.tags_container}>
+                            <p>VueJs</p>
+                            <p>Tailwind CSS</p>
+                            <p>JavaScript</p>
+                        </div>
+                        <div className={RelevantProjectsStyles.card_buttons}>
+                            <a className={RelevantProjectsStyles.card_button} href="https://github.com/VheeeeeeeeeJhay/Home-Page-Redesign" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
                     <div className={RelevantProjectsStyles.card}
                         data-aos="fade-up"
                         data-aos-anchor-placement="top-center"
@@ -75,7 +95,7 @@ function RelevantProjects() {
                             <p>Tailwind CSS</p>
                         </div>
                         <div className={RelevantProjectsStyles.card_buttons}>
-                            <a className={RelevantProjectsStyles.card_button} href="https://github.com/Kronux123/barter.git" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            {/* <a className={RelevantProjectsStyles.card_button} href="https://github.com/Kronux123/barter.git" target="_blank" rel="noopener noreferrer">Source Code</a> */}
                             {/* <a className={RelevantProjectsStyles.card_button} href="https://github.com/VheeeeeeeeeJhay" target="_blank" rel="noopener noreferrer">View Project</a> */}
                         </div>
                     </div>
@@ -95,7 +115,7 @@ function RelevantProjects() {
                             <p>Breeze</p>
                         </div>
                         <div className={RelevantProjectsStyles.card_buttons}>
-                            <a className={RelevantProjectsStyles.card_button} href="https://github.com/RyleFuentes/ISPB.git" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            {/* <a className={RelevantProjectsStyles.card_button} href="https://github.com/RyleFuentes/ISPB.git" target="_blank" rel="noopener noreferrer">Source Code</a> */}
                             {/* <a className={RelevantProjectsStyles.card_button} href="https://github.com/VheeeeeeeeeJhay" target="_blank" rel="noopener noreferrer">View Project</a> */}
                         </div>
                     </div>
@@ -115,7 +135,7 @@ function RelevantProjects() {
                             <p>Firebase</p>
                         </div>
                         <div className={RelevantProjectsStyles.card_buttons}>
-                            <a className={RelevantProjectsStyles.card_button} href="https://github.com/20208094/ToDoListTrial.git" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            {/* <a className={RelevantProjectsStyles.card_button} href="https://github.com/20208094/ToDoListTrial.git" target="_blank" rel="noopener noreferrer">Source Code</a> */}
                             {/* <a className={RelevantProjectsStyles.card_button} href="https://github.com/VheeeeeeeeeJhay" target="_blank" rel="noopener noreferrer">View Project</a> */}
                         </div>
                     </div>
