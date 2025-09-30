@@ -4,7 +4,7 @@ import VheeJhay from "../../assets/Vhee.jpg";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import onlinejobs from "../../assets/onlinejobs.jpeg";
-import resume from "../../assets/Vincent_James_P_Beato_Resume.pdf";
+import resume from "../../assets/Vincent_James_Beato_CV.pdf";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
 function Home({ id }) {

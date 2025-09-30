@@ -93,7 +93,7 @@ function AboutMe() {
                                     <h4>University of Baguio</h4>
                                     <h4>2021 - 2025</h4>
                                 </div>
-                                <p>A fresh graduate in Computer Science. Learn various skills and knowledge necessary and related to Software Development. </p>
+                                <p>A fresh graduate in Computer Science. Learned various skills and knowledge necessary for Web and Mobile Development. </p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,6 @@ function AboutMe() {
                                     <h4>Computer Arts Technological College</h4>
                                     <h4>2016 – 2019</h4>
                                 </div>
-                                {/* <p>Graduated in Information and Communication Technology (ICT) specialization in Computer System Servicing (CSS).</p> */}
                             </div>
                         </div>
                     </div>
