@@ -63,7 +63,7 @@ function AboutMe() {
                             <SiCircleci className={AboutMeStyles.timeline_icon} style={{color: "#bb86fc"}} />
                             <div className={AboutMeStyles.timeline_info}>
                                 <h3>BAGUIO CITY'S SMART CITY COMMAND AND CONTROL CENTER</h3>
-                                <p className={AboutMeStyles.timeline_info_role}>Full Stack Developer</p>
+                                <p className={AboutMeStyles.timeline_info_role}>Full Stack Developer Intern</p>
                                 <div className={AboutMeStyles.timeline_sub_info}>
                                     <h4>Baguio City</h4>
                                     <h4>FEBRUARY 2025 - MAY 2025</h4>
