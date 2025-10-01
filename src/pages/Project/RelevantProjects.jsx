@@ -1,3 +1,5 @@
+import { useState } from "react"
+import Modal from "../../components/Modal/Modal"
 import RelevantProjectsStyles from "./RelevantProjects.module.css"
 import TodoList from "../../assets/todo.jpg"
 import FoodOrdering from "../../assets/order.jpg"
@@ -10,6 +12,7 @@ import PokeSearch from "../../assets/PokeSearch.png"
 
 
 function RelevantProjects() {
+    const [selectedProject, setSelectedProject] = useState(null);
     const projects = {
         'project_1': {
             'img': FoodOrdering,
@@ -79,49 +82,56 @@ function RelevantProjects() {
 
     return (
         <>
-            <div className={RelevantProjectsStyles.section}>
-                <h1 className={RelevantProjectsStyles.section_header}
+          <div className={RelevantProjectsStyles.section}>
+            <h1
+              className={RelevantProjectsStyles.section_header}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+              data-aos-duration="1000"
+            >
+              Relevant&nbsp;<span>Projects</span>
+            </h1>
+    
+            <div className={RelevantProjectsStyles.cards_container}>
+              {Object.entries(projects)
+                .reverse()
+                .map(([key, project], index) => (
+                  <div
+                    className={RelevantProjectsStyles.card}
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-center"
-                    data-aos-duration="1000">Relevant&nbsp;<span>Projects</span></h1>
-
-                <div className={RelevantProjectsStyles.cards_container}>
-                    {Object.entries(projects).reverse().map((item, index) => (
-                        <div className={RelevantProjectsStyles.card}
-                        data-aos="fade-up"
-                        data-aos-anchor-placement="top-center"
-                        data-aos-duration="2500"
-                        data-aos-delay="100"
-                        key={index}>
-                        <img className={RelevantProjectsStyles.card_img} src={item[1].img} alt="Portfolio" />
-                        <div className={RelevantProjectsStyles.card_info}>
-                            <h3>{item[1].title}</h3>
-                            <p>{item[1].title_desc}</p>
-                        </div>
-                        <div className={RelevantProjectsStyles.tags_container}>
-                            {item[1].tech_stack.map((tech, index) => (
-                                <p key={index}>{tech}</p>
-                            ))}
-                        </div>
-                        <div className={RelevantProjectsStyles.card_buttons}>
-                            {
-                                item[1].github !== '' && (
-                                    <a className={RelevantProjectsStyles.card_button} href={item[1].github} target="_blank" rel="noopener noreferrer">Source Code</a>
-                                )
-                            }
-                            {
-                                item[1].project_link !== '' && (
-                                    <a className={RelevantProjectsStyles.card_button} href={item[1].project_link} target="_blank" rel="noopener noreferrer">Project Link</a>
-                                )
-                            }
-                        </div>
+                    data-aos-duration="2500"
+                    data-aos-delay={100 * (index + 1)}
+                    key={index}
+                    onClick={() => setSelectedProject(project)} // open modal on click
+                  >
+                    <img
+                      className={RelevantProjectsStyles.card_img}
+                      src={project.img}
+                      alt={project.title}
+                    />
+                    <div className={RelevantProjectsStyles.card_info}>
+                      <h3>{project.title}</h3>
+                      <p>{project.title_desc}</p>
                     </div>
+                    <div className={RelevantProjectsStyles.tags_container}>
+                      {project.tech_stack.map((tech, index) => (
+                        <p key={index}>{tech}</p>
+                      ))}
+                    </div>
+                  </div>
                 ))}
-                </div>
-
             </div>
+          </div>
+    
+          {/* Modal */}
+          <Modal
+            isOpen={!!selectedProject}
+            onClose={() => setSelectedProject(null)}
+            project={selectedProject}
+          />
         </>
-    )
+      );
 }
 
 export default RelevantProjects;
