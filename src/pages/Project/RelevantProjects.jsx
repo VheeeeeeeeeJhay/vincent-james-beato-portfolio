@@ -9,6 +9,7 @@ import Swapii from "../../assets/Swapii.png"
 import Inventory from "../../assets/Inventory.png"
 import Redesign from "../../assets/redesign.png"
 import PokeSearch from "../../assets/PokeSearch.png"
+import Tracker from "../../assets/job-appli-tracker.png"
 
 
 function RelevantProjects() {
@@ -77,6 +78,14 @@ function RelevantProjects() {
             'tech_stack': ['HTML', 'Tailwind CSS', 'Javascript'],
             'github': 'https://github.com/VheeeeeeeeeJhay/PokeSearch',
             'project_link': 'https://vheeeeeeeeejhay.github.io/PokeSearch/'
+        },
+        'project_9': {
+            'img': Tracker,
+            'title': "Automated Job Application Tracker",
+            'title_desc': `Created an automated job application tracker using zapier by reading new email then storing the summarizes email in google sheets.`,
+            'tech_stack': ['Zapier', 'Google Sheets', 'AI', 'Looker Studio', 'Google Sites', 'Google Calendar', 'Email'],
+            'github': '',
+            'project_link': ''
         },
     }
 
